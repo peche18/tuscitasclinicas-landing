@@ -1,11 +1,16 @@
 function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
+  var menu = document.getElementById('mobileMenu');
+  var burger = document.getElementById('hamburger');
+  var isOpen = menu.classList.toggle('open');
+  if (burger) burger.classList.toggle('open', isOpen);
 }
 
 document.addEventListener('click', function(e) {
   var nav = document.getElementById('navbar');
   if (!nav.contains(e.target)) {
     document.getElementById('mobileMenu').classList.remove('open');
+    var burger = document.getElementById('hamburger');
+    if (burger) burger.classList.remove('open');
   }
 });
 
