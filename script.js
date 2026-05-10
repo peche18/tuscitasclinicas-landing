@@ -23,9 +23,39 @@ document.querySelectorAll('.fade-up').forEach(function(el) {
 
 window.addEventListener('scroll', function() {
   var nav = document.getElementById('navbar');
-  nav.style.boxShadow = window.scrollY > 40
-    ? '0 4px 28px rgba(0,0,0,0.28)'
-    : 'none';
+  if (window.scrollY > 40) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+function toggleFaq(btn) {
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains('faq-open');
+  document.querySelectorAll('.faq-item.faq-open').forEach(function(el) { el.classList.remove('faq-open'); });
+  if (!isOpen) item.classList.add('faq-open');
+}
+
+function clearErrors() {
+  document.querySelectorAll('.field-error').forEach(function(el) { el.textContent = ''; });
+  document.querySelectorAll('.input-error').forEach(function(el) { el.classList.remove('input-error'); });
+}
+
+function showError(fieldId, errorId, msg) {
+  var field = document.getElementById(fieldId);
+  var err = document.getElementById(errorId);
+  if (field) field.classList.add('input-error');
+  if (err) err.textContent = msg;
+}
+
+document.querySelectorAll('#contactForm input').forEach(function(input) {
+  input.addEventListener('input', function() {
+    this.classList.remove('input-error');
+    var errId = 'error-' + this.id;
+    var err = document.getElementById(errId);
+    if (err) err.textContent = '';
+  });
 });
 
 function handleSubmit(e) {
@@ -35,10 +65,18 @@ function handleSubmit(e) {
   var clinica = form.clinica.value.trim();
   var email = form.email.value.trim();
 
-  if (!nombre || !clinica || !email) {
-    alert('Por favor, rellena los campos obligatorios: Nombre, Clínica y Email.');
-    return;
+  clearErrors();
+  var valid = true;
+
+  if (!nombre) { showError('nombre', 'error-nombre', 'Campo obligatorio'); valid = false; }
+  if (!clinica) { showError('clinica', 'error-clinica', 'Campo obligatorio'); valid = false; }
+  if (!email) {
+    showError('email', 'error-email', 'Campo obligatorio'); valid = false;
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    showError('email', 'error-email', 'Introduce un email válido'); valid = false;
   }
+
+  if (!valid) return;
 
   document.getElementById('formContent').style.display = 'none';
   document.getElementById('formSuccess').style.display = 'block';
