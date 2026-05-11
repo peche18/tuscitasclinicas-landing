@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(powershell *)",
-      "Bash(start *)"
+      "Bash(start *)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\FreakMaster\\\\Desktop\\\\landing-citas-clinicas\\\\index.html\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
