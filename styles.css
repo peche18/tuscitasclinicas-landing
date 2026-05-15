@@ -1283,6 +1283,7 @@ footer .nav-logo:hover .brand-icon { filter: drop-shadow(0 10px 26px rgba(96,165
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .feature-card { padding: 28px 22px; }
+  .pricing-card { padding: 28px 22px; }
   .features-grid .feature-card:nth-child(n) { transition-delay: 0ms; }
   .chat-body { padding: 18px; }
   .msg { font-size: 0.84rem; }
