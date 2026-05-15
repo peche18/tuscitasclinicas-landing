@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#2563EB" />
   <title>Tus Citas Clínicas | Automatización con IA para clínicas</title>
-  <meta name="description" content="Asistente de IA para clínicas que responde pacientes, cualifica leads, actualiza CRM y crea solicitudes de cita en Google Calendar." />
+  <meta name="description" content="Asistente de IA para clínicas que capta solicitudes fuera de horario, organiza leads y se integra con Google Calendar o con el sistema de agenda que ya use la clínica." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,10 +27,11 @@
           <li><a href="#funcionalidades">Funcionalidades</a></li>
           <li><a href="#como-funciona">Cómo funciona</a></li>
           <li><a href="#precios">Precios</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#confianza">Por qué</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <div class="nav-cta">
+          <a href="https://app.tuscitasclinicas.com/login" class="nav-login" rel="noopener">Acceder</a>
           <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
         </div>
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -42,8 +43,9 @@
       <a href="#funcionalidades" onclick="toggleMenu()">Funcionalidades</a>
       <a href="#como-funciona" onclick="toggleMenu()">Cómo funciona</a>
       <a href="#precios" onclick="toggleMenu()">Precios</a>
-      <a href="#testimonios" onclick="toggleMenu()">Testimonios</a>
+      <a href="#confianza" onclick="toggleMenu()">Por qué</a>
       <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+      <a href="https://app.tuscitasclinicas.com/login" class="nav-login" rel="noopener" onclick="toggleMenu()">Acceder</a>
       <a href="#contacto" class="btn btn-primary" onclick="toggleMenu()">Solicitar demo</a>
     </div>
   </nav>
@@ -57,7 +59,7 @@
             <span class="badge badge-hero">
               <span class="badge-dot"></span>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.85"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              Asistente activo en <strong style="font-weight:800">48&nbsp;h</strong>
+              Asistente activo en <strong style="font-weight:800">24-48&nbsp;h</strong>
             </span>
           </div>
           <h1>Tu clínica nunca duerme.<br><span class="gradient-text">Tu equipo, sí puede.</span></h1>
@@ -66,22 +68,23 @@
             <a href="#contacto" class="btn btn-mint">Solicita una demo gratuita</a>
             <a href="#como-funciona" class="btn btn-ghost">Ver cómo funciona</a>
           </div>
-          <div class="hero-trust">
-            <div class="trust-avatars">
-              <div class="trust-avatar" style="background:linear-gradient(135deg,#1D4ED8,#2563EB)">DG</div>
-              <div class="trust-avatar" style="background:linear-gradient(135deg,#0D9488,#0F766E)">JR</div>
-              <div class="trust-avatar" style="background:linear-gradient(135deg,#7C3AED,#6D28D9)">ML</div>
-              <div class="trust-avatar trust-avatar-more">+</div>
-            </div>
-            <div class="trust-text">
-              <div class="trust-rating">
-                <span class="trust-stars">★★★★★</span>
-                <strong>4,9/5</strong>
-              </div>
-              <span class="trust-meta">+150 clínicas en Madrid, Barcelona y Valencia</span>
+          <div class="hero-trust hero-trust-honest">
+            <div class="trust-points">
+              <span class="trust-point">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Pensado para fisioterapia y clínicas privadas
+              </span>
+              <span class="trust-point">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Configuración adaptada al flujo de cada clínica
+              </span>
+              <span class="trust-point">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Compatible con Google Calendar y otros sistemas de agenda
+              </span>
             </div>
           </div>
-          <p class="hero-note">Sin permanencia &nbsp;·&nbsp; Garantía 30 días &nbsp;·&nbsp; Cumple RGPD</p>
+          <p class="hero-note">Sin permanencia &nbsp;·&nbsp; Cumple RGPD &nbsp;·&nbsp; Datos en la UE</p>
         </div>
 
         <div class="hero-visual">
@@ -91,8 +94,8 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
             </div>
             <div>
-              <strong>−70%</strong>
-              <span>Llamadas perdidas</span>
+              <strong>-%</strong>
+              <span>llamadas perdidas</span>
             </div>
           </div>
 
@@ -127,8 +130,8 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 15 11 17 15 13"/></svg>
             </div>
             <div>
-              <strong>+40%</strong>
-              <span>Citas confirmadas</span>
+              <strong>+%</strong>
+              <span>citas confirmadas</span>
             </div>
           </div>
         </div>
@@ -142,15 +145,15 @@
       <div class="problema-grid">
         <div>
           <p class="section-label">El problema</p>
-          <h2 class="section-title">¿Cuántas citas pierdes cada día sin saberlo?</h2>
+          <h2 class="section-title">Las solicitudes que recepción no puede atender</h2>
           <ul class="pain-list">
             <li class="pain-item fade-up">
               <div class="pain-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <strong>Llamadas que nadie puede atender</strong>
-                <span>Tu recepción está desbordada. Cada llamada sin respuesta es un paciente que termina llamando a la clínica de al lado.</span>
+                <strong>Llamadas en hora punta</strong>
+                <span>Cuando la recepción está saturada, hay pacientes que no consiguen contactar y terminan llamando a otra clínica.</span>
               </div>
             </li>
             <li class="pain-item fade-up">
@@ -158,8 +161,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
-                <strong>Ausencias de último minuto</strong>
-                <span>Los pacientes olvidan sus citas y nadie les recuerda a tiempo. Hueco en la agenda significa ingresos perdidos y profesional desaprovechado.</span>
+                <strong>Mensajes fuera de horario</strong>
+                <span>Por la noche y los fines de semana llegan peticiones que nadie ve hasta el día siguiente, cuando muchas ya están frías.</span>
               </div>
             </li>
             <li class="pain-item fade-up">
@@ -167,8 +170,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
               </div>
               <div>
-                <strong>CRM desactualizado y datos dispersos</strong>
-                <span>Tu equipo dedica horas actualizando fichas manualmente. Los datos de cada paciente deberían registrarse solos, en tiempo real.</span>
+                <strong>Datos dispersos en varios canales</strong>
+                <span>Las solicitudes llegan por web, WhatsApp y teléfono. Sin un punto único es fácil que algo se pierda por el camino.</span>
               </div>
             </li>
             <li class="pain-item fade-up">
@@ -176,23 +179,23 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
               </div>
               <div>
-                <strong>Fuera de horario, sin servicio</strong>
-                <span>Cuando tu clínica cierra, los pacientes siguen queriendo gestionar sus citas. Hasta ahora, nadie les atendía.</span>
+                <strong>Fines de semana sin cobertura</strong>
+                <span>Cuando la clínica está cerrada, los pacientes siguen escribiendo. Sin un sistema que recoja sus datos, esas oportunidades se enfrían.</span>
               </div>
             </li>
           </ul>
         </div>
         <div class="fade-up">
           <div class="solution-box">
-            <h3>La solución inteligente que tu clínica necesita</h3>
-            <p>Tus Citas Clínicas actúa como un recepcionista virtual que nunca descansa: responde pacientes, cualifica leads, actualiza tu CRM y crea citas en Google Calendar de forma automática.</p>
+            <h3>Un apoyo cuando recepción no llega</h3>
+            <p>Tus Citas Clínicas capta y ordena solicitudes de pacientes cuando la recepción está saturada o la clínica está cerrada: noches, fines de semana y horas punta. Pensado para complementar al equipo, no para sustituirlo.</p>
             <ul class="solution-points">
-              <li><span class="check">✓</span> Reserva, modifica y cancela citas automáticamente</li>
-              <li><span class="check">✓</span> Crea eventos directamente en Google Calendar</li>
-              <li><span class="check">✓</span> Cualifica leads y registra datos en tu CRM</li>
-              <li><span class="check">✓</span> Envía recordatorios por WhatsApp, SMS y email</li>
-              <li><span class="check">✓</span> Responde preguntas frecuentes sin intervención humana</li>
-              <li><span class="check">✓</span> Configuración en menos de 48 horas</li>
+              <li><span class="check">✓</span> Recoge solicitudes de cita fuera del horario de recepción</li>
+              <li><span class="check">✓</span> Compatible con Google Calendar y otros sistemas de agenda</li>
+              <li><span class="check">✓</span> Captura datos básicos del paciente y los organiza en un panel</li>
+              <li><span class="check">✓</span> Mensajes automáticos cuando la clínica está pausada</li>
+              <li><span class="check">✓</span> Botón para pausar o reanudar la automatización</li>
+              <li><span class="check">✓</span> Configuración adaptada al flujo real de cada clínica</li>
             </ul>
           </div>
         </div>
@@ -297,8 +300,8 @@
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
-          <h3>Google Calendar integrado</h3>
-          <p>Las citas se crean y actualizan directamente en tu Google Calendar. Cero dobles reservas, cero huecos no aprovechados, cero errores humanos.</p>
+          <h3>Compatible con tu sistema de agenda</h3>
+          <p>Compatible con Google Calendar y preparado para conectarse con el sistema de agenda que ya use la clínica, según viabilidad técnica.</p>
           <div class="feature-preview preview-cal">
             <div class="preview-cal-head">
               <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span>
@@ -345,8 +348,8 @@
           <div class="feature-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
           </div>
-          <h3>Recordatorios inteligentes</h3>
-          <p>Reduce las ausencias hasta un 60% con mensajes automáticos enviados en el momento justo, antes de que el paciente se olvide.</p>
+          <h3>Recordatorios automáticos</h3>
+          <p>Mensajes de recordatorio enviados en el momento justo para que el paciente no olvide la cita y la clínica reciba menos ausencias.</p>
           <div class="feature-preview preview-rem">
             <div class="preview-rem-bubble">
               Hola María, recordatorio de tu cita mañana a las <strong>10:00&nbsp;h</strong> con el Dr. García.
@@ -459,7 +462,7 @@
               <div class="dash-main-header">
                 <div>
                   <div class="dash-main-title">Agenda de hoy</div>
-                  <div class="dash-main-date">Martes 10 mayo 2026 &nbsp;·&nbsp; Clínica Salud Integral</div>
+                  <div class="dash-main-date">Martes 10 mayo 2026 &nbsp;·&nbsp; Vista demo</div>
                 </div>
                 <div class="dash-new-btn">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -621,103 +624,74 @@
     </div>
   </section>
 
-  <!-- STATS BANNER -->
+  <!-- VALUES BANNER -->
   <section id="stats">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <div class="stat-number">−55<em>%</em></div>
-          <div class="stat-label">Ausencias de media</div>
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Recoge solicitudes fuera de horario</div>
         </div>
         <div class="stat-item">
           <div class="stat-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 15 11 17 15 13"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <div class="stat-number">+40<em>%</em></div>
-          <div class="stat-label">Citas confirmadas</div>
+          <div class="stat-number">+ Recepción</div>
+          <div class="stat-label">Apoyo al equipo, no sustitución</div>
         </div>
         <div class="stat-item">
           <div class="stat-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
-          <div class="stat-number">1,2<em>s</em></div>
-          <div class="stat-label">Tiempo de respuesta</div>
+          <div class="stat-number">Agenda</div>
+          <div class="stat-label">Compatible con Google Calendar y otros</div>
         </div>
         <div class="stat-item">
           <div class="stat-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
           </div>
-          <div class="stat-number">+150</div>
-          <div class="stat-label">Clínicas activas</div>
+          <div class="stat-number">RGPD</div>
+          <div class="stat-label">Datos alojados en la UE</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIOS -->
-  <section id="testimonios">
+  <!-- POR QUÉ / TRUST -->
+  <section id="confianza">
     <div class="container">
       <div class="section-header centered">
-        <p class="section-label">Testimonios</p>
-        <h2 class="section-title">Lo que dicen quienes ya lo usan</h2>
-        <p class="section-subtitle">Clínicas de toda España han transformado su gestión con Tus Citas Clínicas. Estos son algunos de sus resultados.</p>
+        <p class="section-label">Por qué</p>
+        <h2 class="section-title">Pensado para clínicas que quieren responder mejor</h2>
+        <p class="section-subtitle">Tus Citas Clínicas es un proyecto en fase inicial centrado en fisioterapia y clínicas privadas. Nada de promesas infladas: solo un asistente que recoge solicitudes cuando recepción no puede.</p>
       </div>
-      <div class="testimonios-grid">
-        <div class="testimonio-card fade-up">
-          <div class="testimonio-quote">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H4.6a2.57 2.57 0 0 1 2.57-2.57V6zm10 0a5.17 5.17 0 0 0-5.17 5.17V18h6.83v-6.83H14.6a2.57 2.57 0 0 1 2.57-2.57V6z"/></svg>
+      <div class="trust-grid">
+        <div class="trust-card fade-up">
+          <div class="trust-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <div class="stars">★★★★★</div>
-          <p class="testimonio-text">"Llevábamos años perdiendo pacientes por llamadas no atendidas en horas punta. Desde que implantamos Tus Citas Clínicas, las ausencias bajaron un 55% y nuestra recepcionista por fin puede centrarse en quien está en la sala de espera."</p>
-          <div class="testimonio-author">
-            <div class="avatar-wrap">
-              <div class="author-avatar" style="background:linear-gradient(135deg,#1D4ED8,#2563EB)">DG</div>
-              <div class="verified-badge"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-            </div>
-            <div>
-              <div class="author-name">Dra. García Molina</div>
-              <div class="author-role">Directora médica · Clínica Salud Integral, Madrid</div>
-            </div>
-          </div>
+          <h3>Fuera del horario de recepción</h3>
+          <p>Diseñado para clínicas que quieren responder mejor por la noche, los fines de semana y en horas punta, sin perder solicitudes por el camino.</p>
         </div>
-        <div class="testimonio-card fade-up">
-          <div class="testimonio-quote">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H4.6a2.57 2.57 0 0 1 2.57-2.57V6zm10 0a5.17 5.17 0 0 0-5.17 5.17V18h6.83v-6.83H14.6a2.57 2.57 0 0 1 2.57-2.57V6z"/></svg>
+        <div class="trust-card fade-up">
+          <div class="trust-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <div class="stars">★★★★★</div>
-          <p class="testimonio-text">"La integración con Google Calendar fue inmediata. En 48 horas ya funcionaba y en la primera semana teníamos citas confirmadas fuera del horario de oficina. El CRM se actualiza solo. Un cambio de juego para nuestra clínica dental."</p>
-          <div class="testimonio-author">
-            <div class="avatar-wrap">
-              <div class="author-avatar" style="background:linear-gradient(135deg,#0D9488,#0F766E)">JR</div>
-              <div class="verified-badge"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-            </div>
-            <div>
-              <div class="author-name">Javier Ruiz</div>
-              <div class="author-role">Gerente · Clínica Dental Ruiz, Barcelona</div>
-            </div>
-          </div>
+          <h3>Complementa al equipo</h3>
+          <p>Pensado para complementar al equipo de recepción, no para sustituirlo. Las solicitudes llegan ordenadas a un panel para que el personal humano se centre en consulta.</p>
         </div>
-        <div class="testimonio-card fade-up">
-          <div class="testimonio-quote">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H4.6a2.57 2.57 0 0 1 2.57-2.57V6zm10 0a5.17 5.17 0 0 0-5.17 5.17V18h6.83v-6.83H14.6a2.57 2.57 0 0 1 2.57-2.57V6z"/></svg>
+        <div class="trust-card fade-up">
+          <div class="trust-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
-          <div class="stars">★★★★★</div>
-          <p class="testimonio-text">"Somos un centro de fisioterapia pequeño y pensábamos que esto no era para nosotros. Craso error. El sistema cualifica los leads, llena nuestra agenda y actualiza las fichas de pacientes. Gestionamos un 30% más de citas con el mismo equipo."</p>
-          <div class="testimonio-author">
-            <div class="avatar-wrap">
-              <div class="author-avatar" style="background:linear-gradient(135deg,#7C3AED,#6D28D9)">ML</div>
-              <div class="verified-badge"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-            </div>
-            <div>
-              <div class="author-name">María López</div>
-              <div class="author-role">Propietaria · FisioActiva, Valencia</div>
-            </div>
-          </div>
+          <h3>Adaptado a tu flujo</h3>
+          <p>Configuración adaptada al flujo real de cada clínica. Compatible con Google Calendar y preparado para conectarse con el sistema de agenda que ya use la clínica, según viabilidad técnica.</p>
         </div>
       </div>
+      <p class="trust-note">Demo disponible para clínicas locales. Sin invención de clientes, métricas ni casos de éxito.</p>
     </div>
   </section>
 
@@ -726,112 +700,120 @@
     <div class="container">
       <div class="section-header centered">
         <p class="section-label">Planes</p>
-        <h2 class="section-title">Elige el plan para tu clínica</h2>
-        <p class="section-subtitle">Sin costes ocultos, sin permanencia. Solo resultados medibles desde el primer día.</p>
+        <h2 class="section-title">Planes mensuales sin permanencia</h2>
+        <p class="section-subtitle">Tres opciones pensadas para clínicas que quieren responder mejor fuera del horario de recepción. Empieza por el plan que encaje con tu flujo y cámbialo cuando lo necesites.</p>
       </div>
       <div class="pricing-grid">
 
         <div class="pricing-card fade-up">
-          <div class="pricing-tier">Básico</div>
-          <div class="pricing-for">Consultas y clínicas pequeñas</div>
-          <div class="pricing-price">A consultar</div>
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-for">Para clínicas pequeñas que pierden mensajes fuera de horario</div>
+          <div class="pricing-price">79 €<span class="pricing-price-unit">/mes</span></div>
           <div class="pricing-divider"></div>
           <ul class="pricing-features">
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Asistente IA disponible 24/7
+              Asistente de citas para web o canal principal
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Google Calendar integrado
+              Captura de leads y datos básicos del paciente
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Recordatorios automáticos
+              Panel privado para ver pacientes recibidos
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Hasta 1 especialidad
+              Botón para pausar o reanudar la automatización
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Soporte por email
+              Mensaje automático cuando la clínica está pausada
+            </li>
+            <li>
+              <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Configuración inicial incluida
             </li>
           </ul>
-          <a href="#contacto" class="btn btn-outline pricing-cta">Solicitar información</a>
+          <a href="#stripe-starter" class="btn btn-outline pricing-cta">Contratar Starter</a>
         </div>
 
         <div class="pricing-card pricing-featured fade-up">
-          <div class="pricing-badge-top">Recomendado</div>
-          <div class="pricing-tier">Profesional</div>
-          <div class="pricing-for">Clínicas en crecimiento</div>
-          <div class="pricing-price">A consultar</div>
+          <div class="pricing-badge-top">Más popular</div>
+          <div class="pricing-tier">Pro</div>
+          <div class="pricing-for">Clínicas que quieren más control y mejor seguimiento</div>
+          <div class="pricing-price">89 €<span class="pricing-price-unit">/mes</span></div>
           <div class="pricing-divider"></div>
           <ul class="pricing-features">
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Todo lo del plan Básico
+              Todo lo del plan Starter
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              CRM integrado (HubSpot, Salesforce...)
+              Integración con Google Calendar o agenda compatible, según viabilidad técnica
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Cualificación avanzada de leads
+              Seguimiento básico de pacientes interesados
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Hasta 5 especialidades
+              Configuración de horarios
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Multicanal: WhatsApp + Web + SMS
+              Modo activo / pausado desde el panel
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Soporte prioritario
+              Soporte prioritario de configuración
             </li>
           </ul>
-          <a href="#contacto" class="btn btn-white pricing-cta">Solicitar información</a>
+          <a href="#stripe-pro" class="btn btn-white pricing-cta">Contratar Pro</a>
         </div>
 
         <div class="pricing-card fade-up">
-          <div class="pricing-tier">Clínica Premium</div>
-          <div class="pricing-for">Grandes centros y redes</div>
-          <div class="pricing-price">A medida</div>
+          <div class="pricing-tier">Premium</div>
+          <div class="pricing-for">Clínicas con un setup de automatización más completo</div>
+          <div class="pricing-price">99 €<span class="pricing-price-unit">/mes</span></div>
           <div class="pricing-divider"></div>
           <ul class="pricing-features">
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Todo lo del plan Profesional
+              Todo lo del plan Pro
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Especialidades ilimitadas
+              Flujos más personalizados según servicios o tratamientos
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Multi-sede y multi-calendario
+              Avisos internos para recepción
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Integración con tu software médico
+              Ajustes avanzados de mensajes y horarios
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Panel de analíticas avanzado
+              Preparado para integraciones adicionales, según viabilidad técnica
             </li>
             <li>
               <span class="pricing-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              Gestor de cuenta dedicado
+              Revisión mensual básica del rendimiento
             </li>
           </ul>
-          <a href="#contacto" class="btn btn-outline pricing-cta">Contactar ventas</a>
+          <a href="#stripe-premium" class="btn btn-outline pricing-cta">Contratar Premium</a>
         </div>
 
       </div>
-      <p class="pricing-note">Todos los planes incluyen onboarding, configuración inicial y 30 días de garantía de satisfacción.</p>
+      <p class="pricing-secondary">¿Prefieres verlo primero? <a href="#contacto">Solicita una demo sin compromiso.</a></p>
+      <div class="pricing-legal">
+        <p>Los precios no incluyen posibles costes externos de herramientas, WhatsApp Business API, SMS u otros proveedores si fueran necesarios para una integración específica.</p>
+        <p>La disponibilidad de integraciones dependerá del sistema de agenda utilizado por cada clínica y de sus posibilidades técnicas.</p>
+      </div>
     </div>
   </section>
 
@@ -850,7 +832,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Menos de 48 horas. Nuestro equipo se encarga de todo: integramos el asistente con tu Google Calendar y CRM, configuramos los flujos y te formamos en el uso del panel. No necesitas conocimientos técnicos.</p>
+            <p>Trabajamos para dejarlo operativo en pocos días, según el caso. Configuramos el asistente, lo adaptamos al flujo real de la clínica y te formamos en el uso del panel. No necesitas conocimientos técnicos.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -859,7 +841,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </button>
           <div class="faq-answer">
-            <p>No. Tus Citas Clínicas se integra con las herramientas que ya tienes: Google Calendar, HubSpot, Salesforce y otros CRM. No hay migraciones ni interrupciones en tu flujo de trabajo.</p>
+            <p>No es obligatorio. Tus Citas Clínicas está pensado para integrarse con Google Calendar o con el sistema de agenda que ya use la clínica, siempre que sea técnicamente posible. Podemos adaptarlo al flujo actual sin migraciones bruscas.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -886,7 +868,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Sí, sin permanencia ni penalizaciones. Además, todos los planes incluyen 30 días de garantía de satisfacción. Si en ese periodo no notas resultados, te devolvemos el importe íntegro.</p>
+            <p>Sí, los planes mensuales son sin permanencia: puedes pausarlos o darlos de baja cuando quieras desde el panel.</p>
           </div>
         </div>
       </div>
@@ -896,9 +878,9 @@
   <!-- CTA BANNER -->
   <div id="cta-banner">
     <div class="container">
-      <h2>Tu competencia ya automatiza sus citas.<br>¿Y tu clínica?</h2>
-      <p>Más de 150 clínicas en España confían en Tus Citas Clínicas. Configuración en 48 h, sin permanencia, con garantía de 30 días.</p>
-      <a href="#contacto" class="btn btn-white">Solicitar demo gratuita &rarr;</a>
+      <h2>¿Cuántas solicitudes se quedan sin respuesta<br>cuando recepción no llega?</h2>
+      <p>Tus Citas Clínicas captura esas peticiones y las organiza en un panel para tu equipo. Demo sin compromiso y planes mensuales sin permanencia.</p>
+      <a href="#contacto" class="btn btn-white">Solicita una demo sin compromiso &rarr;</a>
     </div>
   </div>
 
@@ -925,8 +907,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
               </div>
               <div>
-                <strong>Tiempo de respuesta</strong>
-                <span>Menos de 24 horas hábiles</span>
+                <strong>Respuesta</strong>
+                <span>Te contactamos en cuanto podemos, en horario laboral</span>
               </div>
             </div>
             <div class="contact-detail">
@@ -943,8 +925,8 @@
         <div class="fade-up">
           <div class="contact-form">
             <div id="formContent">
-              <h3>Solicita tu demo gratuita</h3>
-              <p class="form-subtitle">Rellena el formulario y nos ponemos en contacto contigo en menos de 24 horas.</p>
+              <h3>Solicita una demo sin compromiso</h3>
+              <p class="form-subtitle">Cuéntanos cómo trabaja tu clínica y te contactamos para preparar una demo adaptada a tu caso.</p>
               <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
                 <div class="form-row">
                   <div class="form-group">
@@ -982,7 +964,7 @@
                 <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
               </div>
               <h3>¡Mensaje recibido!</h3>
-              <p>Gracias, nos pondremos en contacto contigo en menos de 24 horas. Revisa también tu bandeja de entrada.</p>
+              <p>Gracias, te contactamos en cuanto podamos para coordinar la demo. Revisa también tu bandeja de entrada.</p>
             </div>
           </div>
         </div>
@@ -999,7 +981,7 @@
             <img src="assets/favicon.svg" alt="" class="brand-icon brand-icon-sm" width="38" height="38">
             <span class="brand-text">Tus Citas <span class="logo-accent">Clínicas</span></span>
           </a>
-          <p>Automatización con IA para clínicas privadas. Responde pacientes, cualifica leads, actualiza CRM y crea citas en Google Calendar.</p>
+          <p>Asistente de IA para clínicas privadas y centros de fisioterapia. Capta solicitudes fuera de horario y se integra con Google Calendar o con el sistema de agenda de la clínica, según viabilidad técnica.</p>
           <a href="mailto:contacto@tuscitasclinicas.com" class="footer-email">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             contacto@tuscitasclinicas.com
@@ -1011,7 +993,7 @@
             <li><a href="#funcionalidades">Funcionalidades</a></li>
             <li><a href="#como-funciona">Cómo funciona</a></li>
             <li><a href="#precios">Precios</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#confianza">Por qué</a></li>
             <li><a href="#contacto">Solicitar demo</a></li>
           </ul>
         </div>
